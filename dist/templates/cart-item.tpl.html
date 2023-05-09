@@ -1,0 +1,13 @@
+
+<div class="cp-cart-thumbnail">
+    <img src="{{item.image}}" />
+</div>
+<div class="cart-item-title">{{item.title}}</div>
+    <div class="cp-cart-item-quantity">
+        <button class="cp-increase">+</button>
+        <input class="cp-quantity" type="number" value="{{item.quantity}}" />
+        <button class="cp-decrease">-</button>
+    </div>
+    <div class="cart-item-price">{{item.priceFormatted()}}</div>
+</div>
+

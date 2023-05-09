@@ -1,0 +1,17 @@
+<div class="cp-product">
+    <div class="cp-product-title">
+        <h3>{{product.title}}</h3>
+    </div>
+    <div class="cp-product-image">
+        <img src="{{product.image}}" alt="A product image" />
+    </div>
+    <div class="cp-product-description">
+        <p>{{product.description}}</p>
+    </div>
+    <div class="cp-product-price">
+        <p>Price: {{product.priceFormatted()}}</p>
+    </div>
+    <div class="cp-product-button">
+        <button data-product_id="{{product.id}}" class="cp-add-to-cart">Add to cart</button>
+    </div>    
+</div>

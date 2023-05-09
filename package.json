@@ -1,0 +1,15 @@
+{
+  "name": "shopping-cart-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live-dev": "npx concurrently \"npx tsc -w\" \"npx sass --watch --style=compressed ./src/scss/style.scss:./dist/css/style.min.css\" \"npx simplifyify -w -m -d ./src/js/app.js --outfile ./dist/js/app.bundle.js\" \"npx live-server --port=50000 --browser=chrome --cors --open=./dist/index.html\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/nunjucks": "^3.2.2",
+    "nunjucks": "^3.2.4"
+  }
+}
